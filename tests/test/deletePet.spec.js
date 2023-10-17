@@ -6,7 +6,7 @@ test.describe('Delete a Pet', () => {
     let petData = null;
     let petID = null;
 
-    test('Delete a pet: @regression', async ({ request }) => {
+    test('Delete a pet: @regression, @smoketest', async ({ request }) => {
 
         petData = await newPetAPI.createNewPet(data);
         petID = await newPetAPI.createPetViaPost(request, petData);

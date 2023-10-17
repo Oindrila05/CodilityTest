@@ -3,7 +3,7 @@ const newPetAPI = require('../api/newPetAPI');
 
 test.describe('Update Pet', () => {
 
-    test('Update Pet: @regression', async ({ request }) => {
+    test('Update Pet: @regression, @smoketest', async ({ request }) => {
         await newPetAPI.updatePetviaPut(request);
     })
 })

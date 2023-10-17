@@ -5,7 +5,7 @@ test.describe('create new Pet', () => {
     let data = null;
     let petData = null;
 
-    test('create new Pet: @regression', async ({ request }) => {
+    test('create new Pet: @regression, @smoketest', async ({ request }) => {
         
         petData = await newPetAPI.createNewPet(data);
         await newPetAPI.createPetViaPost(request, petData);
